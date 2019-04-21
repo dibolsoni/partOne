@@ -59,6 +59,7 @@ body {
 
 .citation {
   font-style: italic;
+  line-height: 20px;
 }
 
 .citation:before {
@@ -66,10 +67,29 @@ body {
   font-style: normal;
 }
 
+.year {
+  line-height: 20px;
+}
+
 .year:before {
   content: ", ";
   font-style: normal;
 }
+.tags {
+  line-height: 20px;
+  text-align: right;
+  margin-right: 4em;
+}
+
+.tags:before {
+  content: ",[";
+  font-style: normal;
+}
+.tags:after {
+  content: "]";
+  font-style: normal;
+}
+
 
 #loadQuote {
   position: fixed;
