@@ -26,7 +26,7 @@ function printQuote() {
   quoteObj = getRandomQuote();
   quoteDiv = document.getElementById('quote-box');
   var html = '<p class="quote">' + quoteObj.quote + '</p>';
-  html += '<p class="source">' + quoteObj.source + '</p>';
+  html += '<p class="source">' + quoteObj.source;
   if (quoteObj.citation) {
     html += '<span class="citation">' + quoteObj.citation + '</span>';
   };
@@ -38,9 +38,9 @@ function printQuote() {
       html += '<br /><span class="tags">' + item + '</span>';
     });
   }
-  html += '</div>';
+  html += '</p></div>';
 
-  quoteDiv.style.backgroundColor = randomColor(0.2);
+  quoteDiv.style.backgroundColor = randomColor(0.3);
   quoteDiv.innerHTML = html;
 
 };

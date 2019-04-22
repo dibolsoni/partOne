@@ -77,8 +77,8 @@ body {
 }
 .tags {
   line-height: 20px;
-  text-align: right;
-  margin-right: 4em;
+  text-align: left;
+  margin-right: 0.5em;
 }
 
 .tags:before {
