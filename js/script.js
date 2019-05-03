@@ -48,19 +48,7 @@ function printQuote() {
 /***
  * random green color of the background changing
  */
-function randomRGB() {
-  colorNumber = Math.floor(Math.random() * 256 + 1)
-  return colorNumber;
-}
 
-function randomColor(alpha=1) {
-  return 'rgba(' + 
-          randomRGB() + ',' + 
-          randomRGB() + ',' + 
-          randomRGB() + ',' +
-          alpha +
-          ')'
-}
 
 //call the function
 printQuote();
