@@ -5,6 +5,20 @@ project 1 - A Random Quote Generator
 
 // Study guide for this project - https://drive.google.com/file/d/1s5grutGuQFwJcQP8bFwEI69Q8FCkGdDk/view?usp=sharing
 
+//suport functions
+function randomRGB() {
+  colorNumber = Math.floor(Math.random() * 256 + 1)
+  return colorNumber;
+}
+
+function randomColor(alpha=1) {
+  return 'rgba(' + 
+          randomRGB() + ',' + 
+          randomRGB() + ',' + 
+          randomRGB() + ',' +
+          alpha +
+          ')'
+}
 
 //quote number index / -1 when loads the page
 var quoteNum = -1;
